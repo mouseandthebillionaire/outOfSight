@@ -1,5 +1,7 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemManager : MonoBehaviour
@@ -15,7 +17,9 @@ public class ItemManager : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void OnMouseDown()
     {
+        Debug.Log("Hit me");
+        Destroy(this.gameObject);
     }
 }

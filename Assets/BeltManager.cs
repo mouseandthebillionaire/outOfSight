@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class BeltManager : MonoBehaviour
 {
-	public GameObject item;
+	public GameObject[] item;
 	public GameObject launchLocation;
 
 	// Start is called before the first frame update
@@ -22,7 +22,8 @@ public class BeltManager : MonoBehaviour
 
 	public IEnumerator CreateItem()
 	{
-		Instantiate(item, launchLocation.transform.position, Quaternion.identity, this.transform);
+		int r = Random.Range(0, 2);
+		Instantiate(item[r], launchLocation.transform.position, Quaternion.identity, this.transform);
 		yield return new WaitForSeconds(1);
 		StartCoroutine(CreateItem());
 	}

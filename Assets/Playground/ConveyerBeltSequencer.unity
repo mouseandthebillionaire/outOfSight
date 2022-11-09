@@ -402,7 +402,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6426b59e199424da1b04870ee333d624, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 9192366740725971634, guid: 8f3877a52f3a94946a0a0f312f61c710, type: 3}
+  item:
+  - {fileID: 9192366740725971634, guid: 8f3877a52f3a94946a0a0f312f61c710, type: 3}
+  - {fileID: 9192366740725971634, guid: b6806bbc7b9a44f5eb8c8b29375fd119, type: 3}
   launchLocation: {fileID: 966650423}
 --- !u!4 &1927944156
 Transform:
