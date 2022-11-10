@@ -1,25 +1,37 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
 public class ItemManager : MonoBehaviour
 {
-    public float itemSpeed;
-    public int   direction;
+    public  int     direction;
+    public  string  instrument;
+    private float[] xLocs   = new [] {10f, 9f, 8f, 7f, 6f, 5f, 4f, 3f, 2f, 1f, 0f, -1f, -2f, -3f, -4f, -5f};
+    private int     currLoc = 0;
 
-    // Start is called before the first frame update
-    void Start()
+    public void UpdatePosition()
     {
-        Rigidbody2D rb = this.gameObject.GetComponent<Rigidbody2D>();
-        rb.AddForce(Vector2.left * itemSpeed);
+
+        if (currLoc == xLocs.Length)
+        { 
+            FMODUnity.RuntimeManager.PlayOneShot("event:/" + instrument); 
+            Destroy(this.gameObject);
+        }
+        else
+        { 
+            this.transform.localPosition = new Vector3(xLocs[currLoc], this.transform.localPosition.y, 0); 
+            currLoc += 1;
+            
+        }
+
     }
 
     // Update is called once per frame
     void OnMouseDown()
     {
-        Debug.Log("Hit me");
         Destroy(this.gameObject);
     }
 }

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3e094e69-84a4-453f-ac69-f63a28151618}">
+		<property name="assetPath">
+			<value>drums.aif</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.210544217687076</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16049a58-4fe2-4ae7-8d1d-6b838380051f}</destination>
+		</relationship>
+	</object>
+</objects>

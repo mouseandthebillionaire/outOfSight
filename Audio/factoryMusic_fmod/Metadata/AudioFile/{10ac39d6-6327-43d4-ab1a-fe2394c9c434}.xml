@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{10ac39d6-6327-43d4-ab1a-fe2394c9c434}">
+		<property name="assetPath">
+			<value>beat_0.aif</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>20.210544217687076</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16049a58-4fe2-4ae7-8d1d-6b838380051f}</destination>
+		</relationship>
+	</object>
+</objects>

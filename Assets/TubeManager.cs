@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class TubeManager : MonoBehaviour
 {
-    public int tubeLevel;
+    public int    tubeLevel;
+    public string tubeInstrument;
 
     // Start is called before the first frame update
     void Start()
@@ -24,12 +25,11 @@ public class TubeManager : MonoBehaviour
     {
         if (other.gameObject.name == "Item_" + tubeLevel + "(Clone)")
         {
-            Debug.Log("X");
             GameManager.S.UpdateScore(+1);
+            FMODUnity.RuntimeManager.PlayOneShot("event:/" + tubeInstrument);
         }
         else
         {
-            Debug.Log("O");
             GameManager.S.UpdateScore(-1);
         }
         Debug.Log(GameManager.S.score);

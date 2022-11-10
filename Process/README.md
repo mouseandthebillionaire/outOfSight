@@ -43,3 +43,28 @@ The idea is this:
 
 * Integrate music into this iteration - then we'll get a better idea if the rhythm works (and how to use FMOD to control tempo)
 * There's a lot more that needs to be done, but this has to happen first before it's even possible to think about those steps
+
+## Music Integration into Unity & FMOD | 10.11.22
+
+### Beat Matching!
+
+<video controls><source  src="Media/proto_10_11.mov" type = "video/mp4"></video>
+
+Using ColinVAudio's [Beat Tracking Tutorial](https://www.youtube.com/watch?v=hNQX1fsQL4Q) we have made a visually-simple outline of this experience.
+There is actually a lot here, and it took forever. The beat matching works very well, which is great. The speed can be increased as well as the spawn rate, and all of this stays on the beat of the FMOD project.
+Let's get right into the next steps, since they are on the brain.
+
+### Next Steps
+* There already is a "point" system where proper items award points and improper items subtract points, but this needs to be tied to musical parameters.
+  Working in FMOD, develop interesting BAD and GOOD effects to influence and reward the removal of bad items.
+* Explore the possibility of increases in tempo. Not sure if this is possible in FMOD (or if it is all that necessary, even)
+* Add screen-based controls and visuals for tempo, beats, spawn-rate, and points (for each conveyer belt)
+* Add on/off controls for each conveyer belt
+* Once the next stage is done (specifically the screen-based controls) a prototype will be uploaded here for testing sake.
+
+### Thoughts
+* [Zspace](https://github.com/zSpaceSheikh) is going to work on visuals, which will surely work to seel the concept
+* Right now this is horizontal, but perhaps a vertical layout is better?
+* It's pretty extendable right now, which feels great. There is the possibility to use completely different songs with the exact same framework
+
+
