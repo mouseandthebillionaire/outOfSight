@@ -133,6 +133,12 @@
 		<property name="tempo">
 			<value>95</value>
 		</property>
+		<property name="timeSignatureNumerator">
+			<value>16</value>
+		</property>
+		<property name="timeSignatureDenominator">
+			<value>16</value>
+		</property>
 		<relationship name="timeline">
 			<destination>{ddd908c5-e45b-4739-a55b-d56310dc24af}</destination>
 		</relationship>

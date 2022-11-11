@@ -280,13 +280,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeltManager (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667310, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 9192366740725971634, guid: 8f3877a52f3a94946a0a0f312f61c710, type: 3}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: beltNum
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: beltSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnProb
@@ -298,7 +306,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Down_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840119768658002543, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: On/Off_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328790767860075388, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Up_2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
@@ -457,13 +477,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeltManager (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667310, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 9192366740725971634, guid: 8f3877a52f3a94946a0a0f312f61c710, type: 3}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: beltNum
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: beltSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnProb
@@ -475,7 +503,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Down_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840119768658002543, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: On/Off_3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328790767860075388, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Up_3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
@@ -534,13 +574,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeltManager (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667310, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: item
       value: 
       objectReference: {fileID: 9192366740725971634, guid: 8f3877a52f3a94946a0a0f312f61c710, type: 3}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: beltNum
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: beltSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnProb
@@ -552,7 +600,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Down_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840119768658002543, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: On/Off_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328790767860075388, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Up_1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
@@ -617,7 +677,7 @@ PrefabInstance:
       objectReference: {fileID: 9192366740725971634, guid: 8f3877a52f3a94946a0a0f312f61c710, type: 3}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: beltSpeed
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnProb
@@ -629,7 +689,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
-      value: 4
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Down_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840119768658002543, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: On/Off_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328790767860075388, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Up_0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f649d706a1a564231a61c001702b6dd6, type: 3}

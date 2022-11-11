@@ -16,8 +16,19 @@ public class ItemManager : MonoBehaviour
     {
 
         if (currLoc == xLocs.Length)
-        { 
-            FMODUnity.RuntimeManager.PlayOneShot("event:/" + instrument); 
+        {
+            // It's a "good" item
+            if (this.gameObject.name == "Item_0(Clone)")
+            {
+                FMODUnity.RuntimeManager.PlayOneShot("event:/" + instrument);
+                GetComponentInParent<BeltManager>().UpdateScore(+1);
+            }
+            // Or it's a "bad" one
+            else
+            {
+                // Do something to the music?
+                GetComponentInParent<BeltManager>().UpdateScore(-1);
+            }
             Destroy(this.gameObject);
         }
         else

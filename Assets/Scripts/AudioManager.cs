@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 public class AudioManager : MonoBehaviour
 {
-    public EventReference music;
+    public FMODUnity.EventReference music;
 
     public TimelineInfo timelineInfo = null;
     private GCHandle     timelineHandle;
@@ -38,24 +38,26 @@ public class AudioManager : MonoBehaviour
     {
         S = this;
         
-        if (music.Path != null)
-        {
+        // I'm going to comment this out because it keeps throwing an error, but it should probably be fixed
+        //if (music.Path != null)
+        //{
             musicInstance = RuntimeManager.CreateInstance(music);
             musicInstance.start();
-        }
+        //}
     }
 
     private void Start()
     {
-        if (music.Path != null)
-        {
+        // Same here
+        //if (music.Path != null)
+        //{
             timelineInfo = new TimelineInfo();
             beatCallback = new FMOD.Studio.EVENT_CALLBACK(BeatEventCallback);
             timelineHandle = GCHandle.Alloc(timelineInfo, GCHandleType.Pinned);
             musicInstance.setUserData(GCHandle.ToIntPtr(timelineHandle));
             musicInstance.setCallback(beatCallback,
                 FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_BEAT | FMOD.Studio.EVENT_CALLBACK_TYPE.TIMELINE_MARKER);
-        }
+        //}
     }
 
     private void OnDestory()
