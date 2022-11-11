@@ -1,4 +1,5 @@
 # Out-of-Sight
-A Hidden-Object Game Idea
+A Hidden Object game asking "What if Hidden Folks but Crypt of the NecroDancer?"
 
-[Process Documentation](https://github.com/zSpaceSheikh/Out-of-Sight/tree/main/Process#readme)
+## Miscellaneous Material
+* [Process Documentation](./Process/)
