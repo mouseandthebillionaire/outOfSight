@@ -48,7 +48,7 @@ The idea is this:
 
 ### Beat Matching!
 
-<video controls><source  src="Media/proto_10_11.mov" type = "video/mp4"></video>
+[![Watch the video]()](Media/proto_10_11.mov)
 
 Using ColinVAudio's [Beat Tracking Tutorial](https://www.youtube.com/watch?v=hNQX1fsQL4Q) we have made a visually-simple outline of this experience.
 There is actually a lot here, and it took forever. The beat matching works very well, which is great. The speed can be increased as well as the spawn rate, and all of this stays on the beat of the FMOD project.
@@ -66,5 +66,28 @@ Let's get right into the next steps, since they are on the brain.
 * [Zspace](https://github.com/zSpaceSheikh) is going to work on visuals, which will surely work to seel the concept
 * Right now this is horizontal, but perhaps a vertical layout is better?
 * It's pretty extendable right now, which feels great. There is the possibility to use completely different songs with the exact same framework
+
+## HTML5 Build v 1.2 | 12.11.22
+
+[![Watch the video]()](Media/proto_12_11.mov)
+
+### It's Live
+
+Some simple shapes. Some beats. Some controls. Pretty much what's on the tin.
+
+### ALSO! [Zspace](https://github.com/zSpaceSheikh) Art
+
+<img src="Media/Package-Sketches.png" width="50%">
+<img src="Media/Package-Sketches_V2.png" width="50%">
+<img src="Media/Conveyor_Styles.png" width="50%">
+
+### Next Steps
+We need to make this more "gamey." The purple "bad" items are being created, but don't communicate anything to the player 
+  (though we _are_ keeping track of the score behind the curtain) Let's...
+* Show the score visually
+* Make a "bad" noise when the wrong item goes in
+* Eventually perhaps evolve the music positively/negatively based on score milestones
+
+Let's also get this art in there. Boom!
 
 
