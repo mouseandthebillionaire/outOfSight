@@ -75,6 +75,9 @@ Let's get right into the next steps, since they are on the brain.
 
 Some simple shapes. Some beats. Some controls. Pretty much what's on the tin.
 
+Play the [Out of Sight Version 1.2 WebGL Build](https://mouseandthebillionaire.github.io/outOfSight/Builds/v1.2/)
+
+
 ### ALSO! [Zspace](https://github.com/zSpaceSheikh) Art
 
 <img src="Media/Package-Sketches.png" width="50%">
