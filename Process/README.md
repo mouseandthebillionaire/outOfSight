@@ -69,7 +69,7 @@ Let's get right into the next steps, since they are on the brain.
 
 ## HTML5 Build v 1.2 | 12.11.22
 
-![12_11 Prototype](Media/proto_12_11.mov)
+![12_11 Prototype](https://user-images.githubusercontent.com/8988958/201481491-6cdde665-fc56-49e8-a525-ab87610d4fe4.mov)
 
 ### It's Live
 
