@@ -69,7 +69,7 @@ Let's get right into the next steps, since they are on the brain.
 
 ## HTML5 Build v 1.2 | 12.11.22
 
-[![Watch the video]()](Media/proto_12_11.mov)
+![12_11 Prototype]("Media/proto_12_11.mov")
 
 ### It's Live
 
@@ -80,8 +80,8 @@ Play the [Out of Sight Version 1.2 WebGL Build](https://mouseandthebillionaire.g
 
 ### ALSO! [Zspace](https://github.com/zSpaceSheikh) Art
 
-<img src="Media/Package-Sketches.png" width="50%">
-<img src="Media/Package-Sketches_V2.png" width="50%">
+<img src="Media/Package_Sketches.png" width="50%">
+<img src="Media/Package_Sketches_V2.png" width="50%">
 <img src="Media/Conveyor_Styles.png" width="50%">
 
 ### Next Steps
