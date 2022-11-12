@@ -91,4 +91,14 @@ We need to make this more "gamey." The purple "bad" items are being created, but
 
 Let's also get this art in there. Boom!
 
+## You've Got ART! | 12.11.22
+
+Who needs sleep when there's art to be made. And packages to click when they're red and make booshy noises to mess up your otherwise sweet jamz?
+
+Play the [Out of Sight Version 1.3 WebGL Build](https://mouseandthebillionaire.github.io/outOfSight/Builds/v1.3/)
+
+### Next Steps
+* More evolution based on score milestones
+* Explore if it's possible to assign specific note to multi-instruments in FMOD
+
 

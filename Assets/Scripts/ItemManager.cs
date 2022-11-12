@@ -27,6 +27,7 @@ public class ItemManager : MonoBehaviour
             else
             {
                 // Do something to the music?
+                FMODUnity.RuntimeManager.PlayOneShot("event:/Boosh");
                 GetComponentInParent<BeltManager>().UpdateScore(-1);
             }
             Destroy(this.gameObject);

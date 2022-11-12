@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using Unity.VisualScripting;
 using UnityEngine;
+using TMPro;
 using Random = UnityEngine.Random;
 
 public class BeltManager : MonoBehaviour
@@ -11,10 +12,12 @@ public class BeltManager : MonoBehaviour
 	public int beltNum;
 	
 	public GameObject[] item;
+	public Sprite[]		boxes;
 	public string       instrument;
 	public GameObject   launchLocation;
 
-	public int				score;
+	public int			score;
+	public GameObject	counter;
 	
 	//public string direction;
 
@@ -76,6 +79,7 @@ public class BeltManager : MonoBehaviour
 							GameObject go = Instantiate(item[0], launchLocation.transform.position, Quaternion.identity,
 								this.transform);
 							go.GetComponent<ItemManager>().instrument = instrument;
+							go.GetComponent<SpriteRenderer>().sprite = boxes[beltNum];
 
 						}
 						else
@@ -83,6 +87,7 @@ public class BeltManager : MonoBehaviour
 							// Bad item
 							GameObject go = Instantiate(item[1], launchLocation.transform.position, Quaternion.identity,
 								this.transform);
+							go.GetComponent<SpriteRenderer>().sprite = boxes[beltNum];
 						}
 
 					}
@@ -154,5 +159,7 @@ public class BeltManager : MonoBehaviour
 	public void UpdateScore(int amount)
 	{
 		score += amount;
+		TextMeshProUGUI tmp = GameObject.Find("Counter_" + beltNum).GetComponent<TextMeshProUGUI>();
+		tmp.text = score.ToString();
 	}
 }
