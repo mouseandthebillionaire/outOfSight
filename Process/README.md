@@ -48,8 +48,6 @@ The idea is this:
 
 ### Beat Matching!
 
-[![Watch the video]()](Media/proto_10_11.mov)
-
 Using ColinVAudio's [Beat Tracking Tutorial](https://www.youtube.com/watch?v=hNQX1fsQL4Q) we have made a visually-simple outline of this experience.
 There is actually a lot here, and it took forever. The beat matching works very well, which is great. The speed can be increased as well as the spawn rate, and all of this stays on the beat of the FMOD project.
 Let's get right into the next steps, since they are on the brain.
@@ -69,7 +67,7 @@ Let's get right into the next steps, since they are on the brain.
 
 ## HTML5 Build v 1.2 | 12.11.22
 
-![12_11 Prototype](https://user-images.githubusercontent.com/8988958/201481491-6cdde665-fc56-49e8-a525-ab87610d4fe4.mov)
+<video src="https://user-images.githubusercontent.com/8988958/201481491-6cdde665-fc56-49e8-a525-ab87610d4fe4.mov" controls="controls" muted="muted"></video>
 
 ### It's Live
 
