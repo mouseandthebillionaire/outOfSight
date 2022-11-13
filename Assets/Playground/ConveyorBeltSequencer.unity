@@ -442,11 +442,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: instrument
-      value: Heart&Soul
+      value: Rezo
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: instrumentEffect
+      value: Rezo_Delay
       objectReference: {fileID: 0}
     - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: m_Name
@@ -855,6 +859,7 @@ GameObject:
   - component: {fileID: 1326499522}
   - component: {fileID: 1326499521}
   - component: {fileID: 1326499524}
+  - component: {fileID: 1326499525}
   m_Layer: 0
   m_Name: AudioManager
   m_TagString: Untagged
@@ -944,6 +949,18 @@ MonoBehaviour:
   OverrideAttenuation: 0
   OverrideMinDistance: 1
   OverrideMaxDistance: 20
+--- !u!114 &1326499525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1326499520}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85d8ddf05cf3d4abdbe38150cf468f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1386190120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1030,6 +1047,10 @@ PrefabInstance:
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: instrumentEffect
+      value: Delay
       objectReference: {fileID: 0}
     - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: m_Name
@@ -1532,6 +1553,18 @@ PrefabInstance:
       propertyPath: counter
       value: 
       objectReference: {fileID: 2076069876}
+    - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Down_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840119768658002543, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: On/Off_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4328790767860075388, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_Name
+      value: Up_0
+      objectReference: {fileID: 0}
     - target: {fileID: 8753588683957314858, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: m_Camera
       value: 

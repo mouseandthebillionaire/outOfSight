@@ -143,6 +143,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 85808fdffbd244d4da20b108768d8837, type: 3}
   - {fileID: 21300000, guid: dd5fa1c221d7142f5945a192b2d22b1c, type: 3}
   instrument: MunsterBass
+  instrumentEffect: 
   launchLocation: {fileID: 729023133335748163}
   score: 0
   counter: {fileID: 0}
@@ -277,7 +278,7 @@ GameObject:
   - component: {fileID: 1560203167331867594}
   - component: {fileID: 7064534066397136079}
   m_Layer: 0
-  m_Name: Down_0
+  m_Name: Down
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -388,7 +389,7 @@ GameObject:
   - component: {fileID: 1076097896686920029}
   - component: {fileID: 7219723504115270174}
   m_Layer: 0
-  m_Name: On/Off_0
+  m_Name: On/Off
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -451,7 +452,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 2
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.28826985, g: 0.7735849, b: 0.30725732, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -520,7 +521,7 @@ GameObject:
   - component: {fileID: 1944990454584399627}
   - component: {fileID: 8418620621748692686}
   m_Layer: 0
-  m_Name: Up_0
+  m_Name: Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -712,6 +713,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2558213914655282642}
+  - component: {fileID: 3186856201437906252}
   m_Layer: 0
   m_Name: ControlPanel
   m_TagString: Untagged
@@ -738,6 +740,21 @@ Transform:
   m_Father: {fileID: 1524967237640133292}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3186856201437906252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4528752671154952394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21e32ecbe20ac4dd290692257439d722, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onOff_colors:
+  - {r: 0.2901961, g: 0.7764706, b: 0.30980393, a: 1}
+  - {r: 0.5377358, g: 0.4641776, b: 0.4641776, a: 1}
 --- !u!1 &7272239801612879729
 GameObject:
   m_ObjectHideFlags: 0
@@ -867,7 +884,7 @@ GameObject:
   - component: {fileID: 3311119335586552953}
   - component: {fileID: 3154947894301295023}
   m_Layer: 0
-  m_Name: belt
+  m_Name: Belt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

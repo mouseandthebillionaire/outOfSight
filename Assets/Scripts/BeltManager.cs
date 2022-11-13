@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
+using FMODUnity;
 using Unity.VisualScripting;
 using UnityEngine;
 using TMPro;
@@ -11,10 +12,11 @@ public class BeltManager : MonoBehaviour
 {
 	public int beltNum;
 	
-	public GameObject[] item;
-	public Sprite[]		boxes;
-	public string       instrument;
-	public GameObject   launchLocation;
+	public GameObject[]       item;
+	public Sprite[]           boxes;
+	public string             instrument;
+	public string             instrumentEffect;
+	public GameObject         launchLocation;
 
 	public int			score;
 	public GameObject	counter;
@@ -100,22 +102,6 @@ public class BeltManager : MonoBehaviour
 		}
 	}
 
-	private void Update()
-	{
-		if (Input.GetMouseButtonDown(0))
-		{
-			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit2D hit = Physics2D.Raycast (ray.origin, ray.direction, Mathf.Infinity);
-
-			if (hit.collider != null)
-			{
-				if(hit.collider.gameObject.name == "On/Off_" + beltNum) StartStop();
-				if(hit.collider.gameObject.name == "Up_" + beltNum) SpeedUp();
-				if(hit.collider.gameObject.name == "Down_" + beltNum) SlowDown();
-			}
-		}
-	}
-
 	private void MoveItems()
 	{
 		if (beltRunning)
@@ -162,4 +148,10 @@ public class BeltManager : MonoBehaviour
 		TextMeshProUGUI tmp = GameObject.Find("Counter_" + beltNum).GetComponent<TextMeshProUGUI>();
 		tmp.text = score.ToString();
 	}
+	public void ResetScore()
+	{
+		score = 0;
+	}
+	
+	
 }

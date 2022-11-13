@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{6cc05486-1e5a-499e-9ff6-613c29e1e9ae}">
+		<property name="name">
+			<value>Rezo_Delay</value>
+		</property>
+		<relationship name="folder">
+			<destination>{b95d795b-afe8-424b-a255-16f3ca990c2c}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1dba6ad7-8d76-43ab-966b-c1de36a49a5a}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1dba6ad7-8d76-43ab-966b-c1de36a49a5a}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

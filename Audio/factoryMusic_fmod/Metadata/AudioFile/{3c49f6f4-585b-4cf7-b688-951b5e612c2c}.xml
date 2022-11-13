@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{3c49f6f4-585b-4cf7-b688-951b5e612c2c}">
+		<property name="assetPath">
+			<value>Rezo/Freeze 9-Square4 Reso Nasal Lead [2022-11-12 163220]-5.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.63158730158730159</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{16049a58-4fe2-4ae7-8d1d-6b838380051f}</destination>
+		</relationship>
+	</object>
+</objects>

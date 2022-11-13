@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -9,6 +10,7 @@ public class ItemManager : MonoBehaviour
 {
     public  int     direction;
     public  string  instrument;
+    private string  playEvent;
     private float[] xLocs   = new [] {10f, 9f, 8f, 7f, 6f, 5f, 4f, 3f, 2f, 1f, 0f, -1f, -2f, -3f, -4f, -5f};
     private int     currLoc = 0;
 
@@ -20,16 +22,23 @@ public class ItemManager : MonoBehaviour
             // It's a "good" item
             if (this.gameObject.name == "Item_0(Clone)")
             {
-                FMODUnity.RuntimeManager.PlayOneShot("event:/" + instrument);
+                //FMODUnity.RuntimeManager.PlayOneShot("event:/" + instrument);
+                playEvent = "event:/" + instrument;
                 GetComponentInParent<BeltManager>().UpdateScore(+1);
             }
             // Or it's a "bad" one
             else
             {
                 // Do something to the music?
-                FMODUnity.RuntimeManager.PlayOneShot("event:/Boosh");
-                GetComponentInParent<BeltManager>().UpdateScore(-1);
+                playEvent = "event:/Boosh";
+                GetComponentInParent<BeltManager>().ResetScore();
             }
+            // Update the effect based on the Score
+            string instrumentEffect = GetComponentInParent<BeltManager>().instrumentEffect;
+            float effectAmmount = GetComponentInParent<BeltManager>().score / 40f;
+            if (effectAmmount > 1) effectAmmount = 1;
+            Debug.Log(effectAmmount);
+            AudioHelper.PlayOneShotWithParameters(playEvent, this.transform.position, (instrumentEffect, effectAmmount));
             Destroy(this.gameObject);
         }
         else
