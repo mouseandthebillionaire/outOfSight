@@ -14,7 +14,7 @@ public class BeltController : MonoBehaviour
 
     private void Start()
     {
-        onOff_btn = this.transform.GetChild(1).gameObject;
+        onOff_btn = this.transform.GetChild(0).gameObject;
         grandparent = transform.parent.parent.gameObject;
         controllerNum = grandparent.GetComponent<BeltManager>().beltNum;
     }
@@ -31,7 +31,6 @@ public class BeltController : MonoBehaviour
                 if (hit.collider.gameObject.name == "On/Off_" + controllerNum)
                 {
                     grandparent.GetComponent<BeltManager>().StartStop();
-                    Debug.Log("Stopping");
                     currColor = (currColor + 1) % 2; // Flip between 1 and 0
                     onOff_btn.GetComponent<SpriteRenderer>().color = onOff_colors[currColor];
                 }

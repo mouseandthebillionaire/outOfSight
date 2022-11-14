@@ -1191,7 +1191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: instrument
-      value: Alarm
+      value: MunsterBass
       objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: spawnInterval
@@ -1549,10 +1549,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeltManager
       objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667310, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: counter
       value: 
       objectReference: {fileID: 2076069876}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: goodProb
+      value: 99
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: beltSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: spawnProb
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: instrument
+      value: Alarm
+      objectReference: {fileID: 0}
+    - target: {fileID: 729023132084667311, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
+      propertyPath: spawnInterval
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1001970200692687260, guid: f649d706a1a564231a61c001702b6dd6, type: 3}
       propertyPath: m_Name
       value: Down_0

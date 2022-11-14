@@ -104,3 +104,15 @@ Play the [Out of Sight Version 1.3 WebGL Build](https://mouseandthebillionaire.g
 * Explore if it's possible to assign specific note to multi-instruments in FMOD
 * Sleep
 
+## So much for Sleep! | 14.11.22
+
+Now that all of the pieces are in place we can really start exploring the composition aspects of this.
+A progression parameter is added here to bring in:
+* Two harmonizing bass lines
+* Drums
+* A shimmery pad thing
+
+More can be done here, and it is definitely worth exploring. 
+One easily implemented idea: a certain point in the progression loads a completely new section of the song (and that should probably be a next step)
+
+Try it out! [Out of Sight Version 2.0 WebGL Build](https://mouseandthebillionaire.github.io/outOfSight/Builds/v2.0/)

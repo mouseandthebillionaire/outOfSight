@@ -57,7 +57,8 @@ public class BeltManager : MonoBehaviour
 		// Are we paused?
 		if (!beltRunning) return;
 		else {
-			if (beginningBeat && AudioManager.lastBeat != 8)
+			// Only Spawn on the 1
+			if (beginningBeat && AudioManager.lastBeat != 1)
 			{
 				return;
 			}
@@ -73,25 +74,30 @@ public class BeltManager : MonoBehaviour
 					int r = Random.Range(0, 100);
 					if (r < spawnProb)
 					{
+						GameObject go;
+						
 						// Choose whether this is a "good" or "bad" item
 						int g = Random.Range(0, 100);
+
 						if ( g < goodProb)
 						{
 							// Good item
-							GameObject go = Instantiate(item[0], launchLocation.transform.position, Quaternion.identity,
+							go = Instantiate(item[0], launchLocation.transform.position, Quaternion.identity,
 								this.transform);
 							go.GetComponent<ItemManager>().instrument = instrument;
-							go.GetComponent<SpriteRenderer>().sprite = boxes[beltNum];
-
 						}
 						else
 						{
 							// Bad item
-							GameObject go = Instantiate(item[1], launchLocation.transform.position, Quaternion.identity,
+							go = Instantiate(item[1], launchLocation.transform.position, Quaternion.identity,
 								this.transform);
-							go.GetComponent<SpriteRenderer>().sprite = boxes[beltNum];
 						}
-
+						// Set the image
+						go.GetComponent<SpriteRenderer>().sprite = boxes[beltNum];
+							
+						// dividing by 180 gives us 0 for left & 1 for right
+						int dir = (int)this.transform.rotation.y / 1;
+						go.GetComponent<ItemManager>().direction = dir;
 					}
 
 					nextSpawn = spawnInterval - 1;
@@ -147,9 +153,17 @@ public class BeltManager : MonoBehaviour
 		score += amount;
 		TextMeshProUGUI tmp = GameObject.Find("Counter_" + beltNum).GetComponent<TextMeshProUGUI>();
 		tmp.text = score.ToString();
+		
+		// Send to the GameManager for total score
+		GameManager.S.UpdateScore(amount);
 	}
+	
 	public void ResetScore()
 	{
+		// Subtract the former score from the overall score
+		GameManager.S.UpdateScore(-score);
+		
+		// Then reset the score to zero
 		score = 0;
 	}
 	

@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public void UpdateScore(int amount)
     {
         score += amount;
+        float progressionChange = score;
+        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("Progression", progressionChange);
     }
 
     public void StartGame()
