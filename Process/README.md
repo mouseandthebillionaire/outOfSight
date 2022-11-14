@@ -106,6 +106,8 @@ Play the [Out of Sight Version 1.3 WebGL Build](https://mouseandthebillionaire.g
 
 ## So much for Sleep! | 14.11.22
 
+<video src="https://user-images.githubusercontent.com/8988958/201743670-f3af0c8e-c8c2-487a-b391-c71bce1d566d.mov" controls="controls" muted="muted"></video>
+
 Now that all of the pieces are in place we can really start exploring the composition aspects of this.
 A progression parameter is added here to bring in:
 * Two harmonizing bass lines
